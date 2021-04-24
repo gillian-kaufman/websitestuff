@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime Numbers</title>
+        <link rel="stylesheet" href="prime.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navi">
+                <ul>
+                    <li class="logo"><a href="../index.html">Happy Vegan Bunny</a></li>
+                    <li class="links"><a href="../index.html">Home</a></li>
+                    <li class="links"><a href="../blog.html">Blog</a></li>
+                    <li class="links"><a href="../about.html">About Me</a></li>
+                    <li class="links"><a href="prime.html">Prime Numbers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Enter a number to find the prime and non-prime numbers between 1 and that number!</h1>
+        <form>
+            Enter a number:
+            <input type="text" id="input" name="number" size="20">
+            <input type="button" name="run" value="Start" onclick = "createList();">
+            <br>
+            <br>
+            <br>
+        </form>
+
+        <div class = "listarea" id = "gridcontainer">
+            <div></div>
+            <div class = "primelist" id = "grid1">
+            </div>
+            <div class = "notprimelist" id = "grid2">
+            </div>
+            <div></div>
+            <div></div>
+            <div class = "sumprimebtn" id = "grid3">
+                <button id = "sumprimes">Sum Primes</button>
+            </div>
+            <div class = "sumnotprimebtn" id = "grid4">
+                <button id = "sumnotprimes">Sum Not-Primes</button>
+            </div>
+            <div></div>
+            <div></div>
+            <div class = "primesum" id = "grid5">
+            </div>
+            <div class = "notprimesum" id = "grid6">
+            </div>
+        </div>
+
+        <script type = "text/javascript" src="prime.js"></script>
+        <script>document.onkeydown = function(event)
+            {
+              if (event.keyCode == 13)
+              {
+                event.preventDefault();
+                createList();
+              }
+            }
+        </script>
+    </body>
+</html>

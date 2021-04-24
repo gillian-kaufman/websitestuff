@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Audio player demo</title>
+	</head>
+	<link rel="stylesheet" href="../CSS/style.css">
+	<body>
+		<header>
+			<nav class="navi">
+				<ul>
+					<li class="logo"><a href="../index.html">Happy Vegan Bunny</a></li>
+					<li class="links"><a href="../index.html">Home</a></li>
+					<li class="links"><a href="../blog.html">Blog</a></li>
+					<li class="links"><a href="../about.html">About Me</a></li>
+					<li class="links"><a href="../Sort/sort.html">sort demo</a></li>
+					<li class="links"><a href="../Card/cards.html">card demo</a></li>
+					<li class="links"><a href="../dynamicCard/dynamiccards.html">dynamic card demo</a></li>
+					<li class="links"><a href="../Prime/prime.html">Prime Numbers</a></li>
+					<li class="links"><a href="../Keypress/keypress.html">keypress demo</a></li>
+                    <li class="links"><a href="Audioplayer/audio.html">audio player demo</a></li>
+				</ul>
+			</nav>	
+		</header>
+        <h1>My favourite anime openings (in no particular order)</h1>
+        favoriteanimeopenings.mp3
+        <br>
+        <br>
+        <div class = "timebox" id="current">00:00 / 00:00</div>
+        <br>
+        <audio id = "audio" ontimeupdate = "displaySongTime(this);"><source src="favoriteanimeopenings.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+        <br>
+        <input type = "button" name="rewind" value="Rewind" onclick = "rewind();">
+        <input type = "button" name="play" value="Play/Pause" onclick = "playPause();">
+        <input type = "button" name="forward" value="Forward" onclick = "forward();">
+        <br>
+        <br>
+        <input type = "button" id = "song1" value = "Noragami Aragoto Opening" onclick = "changeTitle(this);">
+        <input type = "button" id = "song2" value = "Bungou Stray Dogs Opening" onclick = "changeTitle(this);">
+        <input type = "button" id = "song3" value = "Owari No Seraph Season 2 Opening" onclick = "changeTitle(this);">
+        <input type = "button" id = "song4" value = "Black Clover Opening #12" onclick = "changeTitle(this);">
+        <input type = "button" id = "song5" value = "Bakumatsu Opening" onclick = "changeTitle(this);">
+    </body>
+    <script type = "text/javascript" src="audio.js"></script>
+</html>

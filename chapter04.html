@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>  
+<html>  
+    <head>  
+        <title> Chapter 4 Assignment </title>
+        <style>
+	        .button 
+            {
+ 		        background-color:black;
+  		        border-radius: 20px;
+  		        color: white;
+ 		        padding: 15px 30px;
+  		        text-align: center;
+  		        display: inline-block;
+  		        font-size: medium;
+            }
+            a.button:hover
+            {
+                background-color:white;
+  		        color: black;
+  		        font-size: medium;
+            }
+            body
+            {
+                text-align: center;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>        
+        <script>
+        /* Variables for counting clicks and hovers */
+          	var clickRed    = 0;
+            var clickGreen  = 0;
+            var clickBlue   = 0;
+             
+            var hoverRed    = 0;
+            var hoverGreen  = 0;
+            var hoverBlue   = 0;            
+        
+        /* Background color changing functions */
+            function changeColor(color) 
+            { 
+                document.body.style.background = color; 
+            }
+            function changeRed() 
+            { 
+                changeColor("red"); 
+                clickRed++;
+                document.getElementById("clickRed").innerHTML = clickRed;
+            }   
+            function changeGreen() 
+            { 
+                changeColor("green"); 
+                clickGreen++;
+                document.getElementById("clickGreen").innerHTML = clickGreen;
+            }
+            function changeBlue() 
+            { 
+                changeColor("blue"); 
+                clickBlue++;
+                document.getElementById("clickBlue").innerHTML = clickBlue;
+            }
+        /* Button color changing functions */
+            function changeHoverRed()
+            {
+            hoverRed++;
+            document.getElementById("hoverRed").innerHTML = hoverRed;
+            }
+            function changeHoverGreen()
+            {
+            hoverGreen++;
+            document.getElementById("hoverGreen").innerHTML = hoverGreen;
+            }
+            function changeHoverBlue()
+            {
+            hoverBlue++;
+            document.getElementById("hoverBlue").innerHTML = hoverBlue;
+            }                 
+        </script>
+
+        <h1>Press a button... Any button!</h1>
+        <h4>They do magical things...</h4>
+
+        <a onclick = "changeRed()"   onmouseover = "changeHoverRed()"   class = "button"> Red </a>
+        <a onclick = "changeGreen()" onmouseover = "changeHoverGreen()" class = "button"> Green </a>
+        <a onclick = "changeBlue()"  onmouseover = "changeHoverBlue()"  class = "button"> Blue </a>
+
+        <p>Red clicks: <a id="clickRed">0</a> Green clicks: <a id="clickGreen">0</a> Blue clicks: <a id="clickBlue">0</a></p>
+        <p>Red hovers: <a id="hoverRed">0</a> Green hovers: <a id="hoverGreen">0</a> Blue hovers: <a id="hoverBlue">0</a></p>
+    </body>  
+</html>

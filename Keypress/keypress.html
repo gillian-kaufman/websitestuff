@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <title>Displaying Keypresses</title>
+      <link rel="stylesheet" href="../CSS/style.css">
+      <script type="text/javascript">
+         function displayKey(e) {
+            // which key was pressed?
+            if (e.keyCode) {
+               var keycode=e.keyCode;
+            }  
+            else {
+               var keycode=e.which;
+            }
+            character = String.fromCharCode(keycode);
+            // find the object for the destination paragraph
+            var keysParagraph = document.getElementById('keys');
+   
+            //if keycode is a vowel
+            if (character === "a" || character === "e" || character === "i" || character === "o" || character === "u")
+            {
+               //capitalize it
+               keysParagraph.innerHTML += character.toUpperCase();
+            }
+            else
+            {   //otherwise, add the character to the paragraph
+               keysParagraph.innerHTML += character;
+            }
+
+            //if keycode is "R"
+            if (character === 'r')
+            {
+               document.body.style.backgroundColor = "red";
+               document.body.style.color = "white";
+            }
+
+            //if keycode is "G"
+            if (character === 'g')
+            {
+               document.body.style.backgroundColor = "green";
+               document.body.style.color = "white";
+            }
+            //if keycode is "B"
+            if (character === 'b')
+            {
+               document.body.style.backgroundColor = "blue";
+               document.body.style.color = "white";
+            }            
+         }
+      </script>
+  </head>
+  <body onkeypress="displayKey(event)">
+      <header>
+         <nav class="navi">
+            <ul>
+               <li class="logo"><a href="../index.html">Happy Vegan Bunny</a></li>
+               <li class="links"><a href="../index.html">Home</a></li>
+            </ul>
+         </nav>	
+      </header>
+      <h2>Displaying Typed Characters</h2>
+      <p>This document includes a simple script that displays 
+         the keys you type as a new paragraph below. Type a few keys 
+         to try it. </p>
+      <div id="keys"></div>
+  </body>
+</html>

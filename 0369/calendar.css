@@ -1,0 +1,27 @@
+.calendartable 
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+.calendartable th 
+{
+    border: 2px solid black;
+    padding: 6px;
+    font-weight: bold;
+    background-color: darkseagreen;
+    text-align: center;
+}
+.calendartable tr
+{
+    font-size: larger;
+    text-align: left;
+}
+.calendartable td 
+{
+    border: 2px solid black;
+    padding: 6px;
+    vertical-align: top;
+    width: 200px;
+    height: 150px;
+}

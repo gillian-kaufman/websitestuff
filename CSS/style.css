@@ -1,0 +1,216 @@
+/*Header Styles*/
+header
+{
+  background-color: rgb(238, 255, 231);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+}
+header .logo a
+{
+  background-image: url("Images/logo.png");
+  background-size: 125px;
+  background-repeat: no-repeat;
+  text-indent: -10000%;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  height: auto;
+  width: 125px;
+}
+/*Navigation Styles*/
+.navi
+{
+  overflow: hidden;
+}
+.navi a 
+{
+  color: darkseagreen;
+  float: left;
+  font-size: small;
+  padding: 34px 10px;
+  text-decoration: none;
+}
+.navi .links a:hover
+{
+  background-color: rgb(255, 212, 219);
+  color: seagreen;
+}
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*Body Styles*/
+body
+{
+  background-color: lavenderblush;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body a
+{
+  color: darkseagreen;
+  text-decoration: none;
+}
+body a:hover
+{
+  color: seagreen;
+}
+.homelogo
+{
+  width: 400px;
+}
+/*Page Header Styles*/
+h1
+{
+  color: seagreen;
+  text-align: center;
+}
+/*About Page Content Styles*/
+h3
+{
+  color: seagreen;
+  text-align: center;
+}
+.bio
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.bio div
+{
+  background-color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 11pt;
+  height: 490px;
+  width: 400px;
+}
+.bioimage
+{
+  width: auto;
+  height: 500px;
+}
+/*Collection page containers and buttons*/
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 10px;
+  text-align: left;
+}
+.container2
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 10px;
+  text-align: left;
+}
+#toTop 
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: darkseagreen; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#toTop:hover 
+{
+  background-color: seagreen;
+}
+
+#myTable tr 
+{
+  width: 100%;
+  border: 2px seagreen;
+  border-collapse: collapse;
+}
+/*Blog Homepage Styles*/
+.content
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content div
+{
+  background-color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11pt;
+  height: auto;
+  width: 400px;
+}
+/*Blog Post Styles*/
+.postcontent
+{
+  background-color: white;
+  text-align: justify;
+  font-size: 11pt;
+  margin: 0 10%;
+  padding: 5px 10px 5px 10px;
+}
+.postcontent img
+{
+  border-radius: 5%;
+  width: 40%; 
+  float: left;
+}
+/*Homepage Styles*/
+.homecontent
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.homecontent div
+{
+  background-color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  height: 475px;
+  width: 400px;
+}
+.homecontent img
+{
+  height: 375px;
+  width: auto;
+}
+/*Footer Styles*/
+footer
+{
+  background-color: rgb(238, 255, 231);
+  color: darkseagreen;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.im img
+{
+  display: inline-block;
+  position: relative;
+  top: 13px;
+  height: 50px;
+  width: auto;
+}
